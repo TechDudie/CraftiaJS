@@ -1,0 +1,11 @@
+html,
+body,
+#app {
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+  height: 100%;
+}
