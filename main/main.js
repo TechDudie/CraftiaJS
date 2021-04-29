@@ -1,0 +1,12 @@
+import {PolyScene} from 'https://unpkg.com/@polygonjs/polygonjs@latest/dist/all.js';
+const scene = new PolyScene();
+const rootNode = scene.root();
+const geo = rootNode.createNode('geo');
+const box = geo.createNode('box');
+rootNode.createNode('hemisphereLight');
+const perspectiveCamera1 = rootNode.createNode('perspectiveCamera');
+perspectiveCamera1.p.t.set([5, 5, 5]);
+const events1 = perspectiveCamera1.createNode('eventsNetwork');
+const orbitsControls = events1.createNode('cameraOrbitControls');
+perspectiveCamera1.p.controls.setNode(orbitsControls);
+perspectiveCamera1.createViewer(document.getElementById('app'));
