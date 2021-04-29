@@ -10,10 +10,12 @@ canvas {
   height: 100%;
 }
 #container {
-    position: relative;
+  position: relative;
 }
 #controls {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+  width: 150px;
 }
