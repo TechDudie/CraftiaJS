@@ -9,13 +9,3 @@ canvas {
   display: block;
   height: 100%;
 }
-#container {
-  position: relative;
-}
-#controls {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 60px;
-  width: 60px;
-}
